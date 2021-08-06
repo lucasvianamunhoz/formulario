@@ -15,7 +15,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    func validaTelefone(phone: String) -> Bool {
+        return phone.isValidPhone
+    }
+    
 }
+
+extension String {
+   var isValidPhone: Bool {
+      let regularExpressionForPhone = "^\\d{3}-\\d{3}-\\d{4}$"
+      let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
+      return testPhone.evaluate(with: self)
+   }
+}
+
+
 
