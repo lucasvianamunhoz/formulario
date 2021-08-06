@@ -16,7 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-BZ-Rok">
+=======
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-BZ-Rok">
+>>>>>>> main
                                 <rect key="frame" x="20" y="213" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -27,26 +31,59 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-hJ-Uge">
+<<<<<<< HEAD
+                                <rect key="frame" x="20" y="315" width="364" height="34"/>
+=======
                                 <rect key="frame" x="20" y="306" width="364" height="34"/>
+>>>>>>> main
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-Fc-JBK">
+<<<<<<< HEAD
+                                <rect key="frame" x="20" y="357" width="364" height="34"/>
+=======
                                 <rect key="frame" x="20" y="355" width="364" height="34"/>
+>>>>>>> main
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO9-Mz-OMk">
+<<<<<<< HEAD
+                                <rect key="frame" x="20" y="461" width="364" height="30"/>
+                                <state key="normal" title="Validar"/>
+                                <connections>
+                                    <action selector="ValidarFormulario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWj-KO-JGd"/>
+                                </connections>
+=======
                                 <rect key="frame" x="18" y="457" width="366" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="wf7-p4-hVG"/>
                                 </constraints>
                                 <state key="normal" title="Validar"/>
+>>>>>>> main
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+<<<<<<< HEAD
+                            <constraint firstItem="VBo-BZ-Rok" firstAttribute="trailing" secondItem="fyQ-2v-YWt" secondAttribute="trailing" id="43W-cL-5U7"/>
+                            <constraint firstItem="NO9-Mz-OMk" firstAttribute="top" secondItem="cR4-Fc-JBK" secondAttribute="bottom" constant="70" id="4Pn-pg-29q"/>
+                            <constraint firstItem="fyQ-2v-YWt" firstAttribute="trailing" secondItem="KtG-hJ-Uge" secondAttribute="trailing" id="7tC-rO-a4U"/>
+                            <constraint firstItem="cR4-Fc-JBK" firstAttribute="top" secondItem="KtG-hJ-Uge" secondAttribute="bottom" constant="8" id="CPe-vn-goO"/>
+                            <constraint firstItem="VBo-BZ-Rok" firstAttribute="leading" secondItem="fyQ-2v-YWt" secondAttribute="leading" id="EEK-dk-Mqv"/>
+                            <constraint firstItem="VBo-BZ-Rok" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="Hob-ti-ze0"/>
+                            <constraint firstItem="cR4-Fc-JBK" firstAttribute="trailing" secondItem="NO9-Mz-OMk" secondAttribute="trailing" id="PXd-jF-MMR"/>
+                            <constraint firstItem="KtG-hJ-Uge" firstAttribute="top" secondItem="fyQ-2v-YWt" secondAttribute="bottom" constant="17" id="U4H-hl-g0h"/>
+                            <constraint firstItem="fyQ-2v-YWt" firstAttribute="top" secondItem="VBo-BZ-Rok" secondAttribute="bottom" constant="17" id="Y6j-lw-kKA"/>
+                            <constraint firstItem="KtG-hJ-Uge" firstAttribute="leading" secondItem="cR4-Fc-JBK" secondAttribute="leading" id="bmP-U4-3Aq"/>
+                            <constraint firstItem="KtG-hJ-Uge" firstAttribute="trailing" secondItem="cR4-Fc-JBK" secondAttribute="trailing" id="eSv-ba-YZT"/>
+                            <constraint firstItem="fyQ-2v-YWt" firstAttribute="leading" secondItem="KtG-hJ-Uge" secondAttribute="leading" id="jPU-th-dln"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VBo-BZ-Rok" secondAttribute="trailing" constant="30" id="nAj-5F-pGO"/>
+                            <constraint firstItem="VBo-BZ-Rok" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nE6-5d-6HQ"/>
+                            <constraint firstItem="cR4-Fc-JBK" firstAttribute="leading" secondItem="NO9-Mz-OMk" secondAttribute="leading" id="wvS-zz-7Am"/>
+=======
                             <constraint firstItem="NO9-Mz-OMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="1iz-cd-Gci"/>
                             <constraint firstItem="VBo-BZ-Rok" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2DI-iX-EIo"/>
                             <constraint firstItem="fyQ-2v-YWt" firstAttribute="top" secondItem="VBo-BZ-Rok" secondAttribute="bottom" constant="17" id="8tM-8I-uxU"/>
@@ -62,8 +99,15 @@
                             <constraint firstItem="cR4-Fc-JBK" firstAttribute="trailing" secondItem="NO9-Mz-OMk" secondAttribute="trailing" id="u2M-Rw-DkQ"/>
                             <constraint firstItem="NO9-Mz-OMk" firstAttribute="top" secondItem="cR4-Fc-JBK" secondAttribute="bottom" constant="68" id="vea-RD-zn9"/>
                             <constraint firstItem="VBo-BZ-Rok" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="vlG-iE-na2"/>
+>>>>>>> main
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Cpf" destination="KtG-hJ-Uge" id="S1C-eL-e2v"/>
+                        <outlet property="Email" destination="cR4-Fc-JBK" id="QqT-Hw-gii"/>
+                        <outlet property="Nome" destination="VBo-BZ-Rok" id="fCZ-yg-Ii4"/>
+                        <outlet property="Telefone" destination="KtG-hJ-Uge" id="Mf8-Zj-KhF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
