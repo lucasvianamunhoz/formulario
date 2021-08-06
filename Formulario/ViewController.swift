@@ -21,11 +21,14 @@ class ViewController: UIViewController {
      
     }
     
-    func validaTelefone(phone: String) -> Bool {
-        return phone.isValidPhone
+    func IsValidPhone(phone: String)  {
+        let valid = phone.isValidPhone
+        if !valid {
+            print("Telefone invalido ");
+        }
     }
     @IBAction func ValidarFormulario(_ sender: Any) {
-        
+        IsValidPhone(phone: Telefone.text!)
         IsValidEmail(email: Email.text!)
     }
      func IsValidEmail(email: String)  {
