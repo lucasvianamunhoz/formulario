@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         let valido = emailPred.evaluate(with: email)
         if(!valido){
-            print("Email invalido");
+            print("Email invalido ");
         }
         
     }
