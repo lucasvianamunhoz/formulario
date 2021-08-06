@@ -108,6 +108,9 @@
                             <constraint firstItem="KtG-hJ-Uge" firstAttribute="top" secondItem="fyQ-2v-YWt" secondAttribute="bottom" constant="8" id="y7x-Co-1O8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="VBo-BZ-Rok" id="rGE-wS-BwJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
