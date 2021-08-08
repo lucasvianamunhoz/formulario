@@ -8,23 +8,50 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var nameTextField: UITextField!
     
+    //develop
+
+    @IBOutlet weak var Email: UITextField!
+    @IBOutlet weak var Cpf: UITextField!
+    @IBOutlet weak var Telefone: UITextField!
+    @IBOutlet weak var Nome: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
+    
+    func IsValidPhone(phone: String)  {
+        let valid = phone.isValidPhone
+        if !valid {
+            print("Telefone invalido ");
+        }
+    }
+    @IBAction func ValidarFormulario(_ sender: Any) {
+        IsValidPhone(phone: Telefone.text!)
+        IsValidEmail(email: Email.text!)
+    }
+     func IsValidEmail(email: String)  {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
-        func validateName(name: String) ->Bool {
-              // Length be 18 characters max and 3 characters minimum, you can always modify.
-              let nameRegex = "^\\w{3,18}$"
-              let trimmedString = name.trimmingCharacters(in: .whitespaces)
-              let validateName = NSPredicate(format: "SELF MATCHES %@", nameRegex)
-              let isValidateName = validateName.evaluate(with: trimmedString)
-              return isValidateName
-           }
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let valido = emailPred.evaluate(with: email)
+        if(!valido){
+            print("Email invalido ");
+        }
+        
+    }
+}
+  
+
+extension String {
+   var isValidPhone: Bool {
+      let regularExpressionForPhone = "^\\d{3}-\\d{3}-\\d{4}$"
+      let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
+      return testPhone.evaluate(with: self)
+   }
 
 }
+
+
 
